@@ -1,0 +1,769 @@
+
+/* === Common CSS Start === */
+
+/* Structure CSS*/
+::selection {
+      background-color: #000000;
+      color: #ffffff;
+}
+      /* width */
+::-webkit-scrollbar {
+      width: 10px;
+}
+
+      /* Track */
+::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+}
+
+      /* Handle */
+::-webkit-scrollbar-thumb {
+      background: #888; 
+}
+      /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+}
+
+      /* Body CSS*/
+:root {
+      --primary-color: #8DC63F;
+      --Sub_title: #7f8c8d;
+      --text-color: #000000;
+      --heading-color: #ffffff;
+}
+html {
+      font-size: 1px;
+}
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+a {
+      text-decoration: none;
+}
+body {
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+}
+ul,
+ol,
+li {
+      list-style: none;
+}
+/* === Common CSS End === */
+
+
+
+/* === Header Style Start === */
+.header_container {
+      background-color: var(--text-color);
+      display: flex;
+      padding: 0 1rem;
+      padding-bottom: 1rem;
+}
+.header_left {
+      flex: 1;
+      margin-top: 1rem;
+}
+.header_icon i {
+      margin-right: 0.5rem;
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--heading-color);
+      justify-content: center;
+      align-items: center;
+      color: var(--heading-color);
+      display: inline-flex;
+      border-radius: 0.25rem;
+      transition: all linear 0.3s;
+}
+.header_right {
+      display: flex;
+      margin-left: 1rem;
+}
+.header_phone {
+      display: flex;
+      margin-right: 1rem;
+      margin-top: 1.25rem;
+}
+.phone_item {
+      margin-right: 1rem;
+      display: flex;
+}
+.phone_item i {
+      margin-right: 0.5rem;
+      color: var(--primary-color);
+}
+.phone_item p {
+      color: var(--heading-color);
+}
+.header_btn a {
+      margin-top: 0.7rem;
+      margin-left: 2rem;
+      width: 140px;
+      height: 35px;
+      text-transform: uppercase;
+      background-color: var(--primary-color);
+      color: #000000;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      font-weight: 400;
+      transition: all linear 0.3s;
+}
+.header_btn a:hover {
+      box-shadow: 3px 3px 5px 3px var(--Sub_title);
+      transform: translateY(-0.25rem);
+}
+/* === Header Style End === */
+
+
+
+
+/* === Navbar Style Start === */
+.navbar_container {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+}
+.menu ul {
+      display: flex;
+      margin-top: 1rem;
+}
+.menu ul li {
+      display: flex;
+      margin: 0 1rem;
+}
+.menu ul li a {
+      color: var(--text-color);
+      font-size: 1rem;
+      font-weight: 500;
+      position: relative;
+      transition: all linear 0.3s;
+} 
+.menu ul li a:hover {
+      font-weight: 600;
+      /* transition: all linear 0.3s; */
+}
+.menu ul li a:hover::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: var(--primary-color);
+      border-radius: 5px;
+      transition: all linear 0.3s;
+}
+.menu ul li a:hover::before {
+      transform: translateY(1.5rem);
+}
+.menu-btn {
+      margin-top: 0.5rem;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1.75rem;
+      color: var(--text-color);
+}
+
+  /* Hide navigation by default */
+.nav {
+      display: none;
+}
+.nav.active {
+      display: block;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      padding: 15px;
+      position: absolute;
+      /* top: 4rem; */
+      left: 30%;
+      right: 60%;
+      z-index: 1000;
+      text-align: center;
+}
+.nav__list li {
+      border-bottom: 1px solid var(--text-color);
+      margin: 10px 0;
+}
+.nav__list li a {
+      padding-top: 5px;
+      color: var(--text-color);
+}
+.nav__list li a:hover {
+      color: var(--heading-color);
+}
+
+/* === Navbar Style End === */
+
+
+
+
+/* === Hero Style Start === */
+.hero_container {
+      background: url(../images/hero.jpg);
+      background-repeat: no-repeat;
+}
+.hero_name {
+      padding-top: 6rem;
+      text-align: center;
+      font-size: 3.5rem;
+      color: var(--heading-color);
+      text-transform: uppercase;
+}
+.description {
+      color: var(--heading-color);
+      padding: 1rem 10rem;
+      font-size: 1.25rem;
+      text-align: center;
+      line-height: 1.75rem;
+}
+.hero_btn {
+      text-align: center;
+      padding-bottom: 6rem;
+}
+.hero_btn a {
+      margin-top: 0.7rem;
+      margin-left: 2rem;
+      width: 200px;
+      height: 50px;
+      background-color: #FFBD1A;
+      color: #000000;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid #FF831D;
+      border-radius: 4px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all linear 0.3s;
+}
+.hero_btn a:hover {
+      box-shadow: 3px 3px 5px 3px var(--Sub_title);
+      transform: translateY(-0.25rem);
+}
+/* === Hero Style End === */
+
+
+
+
+/* === Subtitle Style Start === */
+.subtitle_container {
+      margin-top: 5rem;
+      text-align: center;
+}
+.title {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      padding-bottom: 0.75rem;
+}
+.title span {
+      color: var(--primary-color);
+}
+.sub_title {
+      color: var(--Sub_title);
+      margin-bottom: 2.5rem;
+}
+/* === Subtitle Style End === */
+
+
+
+
+/* === Advantage Style Start === */
+.advantage_sub_container {
+      display: grid;
+      grid-template-columns: repeat(5,minmax(0,1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+}
+.advantage_list {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+}
+.advantage_logo_container {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background-color: #f1f1f1;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      position: relative;
+}
+.advantage_logo_container img {
+      position: absolute;
+      width: 40%;
+      height: 40%;
+      object-fit: cover;
+      overflow: hidden;
+}
+.advantage_name {
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+}
+.advantage_org_name {
+      font-size: 0.75rem;
+}
+/* === Advantage Style End === */
+
+
+
+/* === About Style Start === */
+.about_container {
+      padding-top: 1rem;
+}
+.about_sub_container {
+      display: flex;
+      gap: 4rem;
+}
+.about_left {
+      width: 50%;
+      margin-top: 2rem;
+      margin-right: 1rem;
+}
+.about_left p {
+      text-align: justify;
+}
+.about_btn a {
+      margin-top: 2rem;
+      width: 150px;
+      height: 35px;
+      background-color: #FFBD1A;
+      color: #000000;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid #FF831D;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all linear 0.3s;
+}
+.about_btn a:hover {
+      box-shadow: 3px 3px 5px 3px var(--Sub_title);
+      transform: translateY(-0.25rem);
+}
+/* === About Style End === */
+
+
+
+
+/* === services Style Start === */
+.services_container {
+      padding-top: 2rem;
+}
+.services_sub_container {
+      display: grid;
+      grid-template-columns: repeat(4,minmax(0,1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+}
+.services_list {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+}
+.services_logo_container {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background-color: #f1f1f1;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      position: relative;
+}
+.services_logo_container img {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+      overflow: hidden;
+}
+.services_name {
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+}
+.services_org_name {
+      font-size: 0.75rem;
+}
+.services_btn  {
+      margin-top: 1rem;
+}
+.services_btn a {
+      color: var(--primary-color);
+      font-size: .8rem;
+}
+.services_btn a:hover {
+      color: var(--text-color);
+}
+/* === services Style End === */
+
+
+
+
+/* === Portfolio Style Start === */
+.portfolio_container {
+      padding-top: 0.2rem;
+      background-color: #212121;
+}
+.titles {
+      color: var(--heading-color);
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      padding-bottom: 0.75rem;
+}
+.titles span {
+      color: var(--primary-color);
+}
+.portfolio_menu ul {
+      justify-content: center;
+      display: flex;
+}
+.portfolio_menu ul li {
+      margin: 0 1rem;
+}
+.portfolio_menu ul li a {
+      font-weight: 500;
+      text-transform: uppercase;
+      color: var(--heading-color);
+}
+.portfolio_menu ul li a:hover {
+      color: var(--primary-color);
+}
+.portfolio_sub_container {
+      display: grid;
+      grid-template-columns: repeat(5,minmax(0,1fr));
+      gap: 1.25rem;
+      justify-content: space-between;
+      padding: 2rem;
+}
+.portfolio_list {
+      width: 200px;
+      height: 200px;
+}
+.portfolio_list img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+/* === Portfolio Style End === */
+
+
+
+
+/* === Process Style Start === */
+.process_container {
+      padding-top: 4rem;
+}
+.process_sub_container {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(6,minmax(0,1fr));
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+}
+.process_list {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+}
+.process_logo_container {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      position: relative;
+      border: 1px solid var(--Sub_title);
+}
+.process_logo_container img {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+      overflow: hidden;
+}
+.process_name {
+      font-size: 1.rem;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+}
+.process_org_name {
+      font-size: 0.75rem;
+      padding-bottom: 2rem;
+}
+/* === Process Style End === */
+
+
+/* === Reviews Style Start === */
+.reviews_container {
+      padding-top: 1rem;
+}
+.reviews_sub_container {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+}
+.reviews_list {
+      display: flex;
+      background-color: #f1f1f1;
+}
+.reviews_logo_container {
+      margin: 1rem;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      position: relative;
+      border: 1px solid var(--Sub_title);
+}
+.reviews_logo_container img {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+      overflow: hidden;
+}
+.reviews_description {
+      margin: 2rem 1rem;
+}
+.reviews_name {
+      font-size: 1.rem;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+}
+.reviews_org_name {
+      font-size: 0.75rem;
+}
+/* === Reviews Style End === */
+
+
+
+
+/* === Skills Style Start === */
+.skills_sub_container {
+      display: grid;
+      grid-template-columns: repeat(5,minmax(0,1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+}
+.skills_list {
+      display: block;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+}
+.skills {
+      margin-left: auto;
+      margin-right: auto;
+      width: 160px;
+      height: 160px;
+      /* background: #8DC63F; */
+      position: relative;
+}
+.circle {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      /* border: 1px solid red; */
+      padding: 20px;
+      box-shadow: 6px 6px 10px -1px rgba(0, 0, 0,0.15), 
+                  -6px -6px 10px -1px rgba(255, 255, 255,0.7);
+
+}
+.inner {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* border: 1px solid red; */
+      box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0,0.2), 
+                  inset -4px -4px 6px -1px rgba(255, 255, 255,0.7),
+                  -0.5px -0.5px 0px rgba(255, 255, 255,1),
+                  0.5px 0.5px 0px rgba(0, 0, 0,0.15),
+                  0px 12px 10px -10px rgba(0, 0, 0,0.05)
+}
+#number {
+      font-weight: 600;
+      color: var(--text-color);
+}
+circle {
+      fill: none;
+      stroke: var(--primary-color);
+      stroke-width: 20px;
+      stroke-dasharray: 472;
+      stroke-dashoffset: 472;
+      animation: anim 3s linear forwards;
+}
+svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+@keyframes anim {
+      100% {
+            stroke-dashoffset: 165.2;
+      }
+}
+.skills_name {
+      padding-top: 1rem;
+      font-size: 1.rem;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+}
+.skills_org_name {
+      font-size: 0.75rem;
+      padding-bottom: 2rem;
+}
+/* === Skills Style End === */
+
+
+
+
+/* === Contact & Project Style Start === */
+.project_container {
+      background: var(--primary-color);
+      padding: 3rem 0;
+      text-align: center;
+}
+.project_container h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-bottom: 1.5rem;
+}
+.type form input {
+      margin: 0 0.5rem 1rem 2rem;
+      width: 250px;
+      height: 35px;
+      outline: none;
+      border: none;
+      border-radius: .25rem;
+      font-size: 1rem;
+      padding-left: 1rem;
+}
+.type form a {
+      margin-left: 1rem;
+      width: 180px;
+      height: 36px;
+      background-color: #FFBD1A;
+      color: #000000;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid #FF831D;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all linear 0.3s;
+}
+.type form a:hover {
+      box-shadow: 3px 3px 5px 3px var(--Sub_title);
+      transform: translateY(-0.25rem);
+}
+.project_container p {
+      padding: 1.5rem;
+      font-size: 1.125rem;
+}
+/* === Contact & Project Style End === */
+
+
+
+
+
+/* === Footer Style Start === */
+.footer_container {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: row;
+      background-color: #f1f1f1;
+}
+.logo_footer {
+      flex: 2;
+      padding-left: 1rem;
+}
+.logo_footer p {
+      padding-top: 1rem;
+      font-size: 0.75rem;
+      line-height: 1rem;
+}
+.logo_footer h6 {
+      padding-top: 2rem;
+      font-size: 1.5rem;
+}
+.services_footer,
+.useful_footer,
+.contacts_footer {
+      flex: 1;
+      border-left: 2px solid var(--text-color);
+      padding-left: 2rem;
+}
+.services_footer h4,
+.useful_footer h4,
+.contacts_footer h4 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      padding-bottom: 1.5rem;
+}
+.services_footer ul li,
+.useful_footer ul li {
+      font-size: 1rem;
+      margin-bottom: .5rem;
+}
+.services_footer ul li a,
+.useful_footer ul li a {
+      color: #555;
+      font-weight: 500;
+} 
+.contacts_footer p {
+      font-size: 1.25;
+      padding-bottom: 1rem;
+      color: #555;
+}
+.contacts_footer .icon {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      color: #555;
+}
+.contacts_footer .icon i {
+      padding-right: 0.5rem;
+}
+
+/* === Footer Style End === */

@@ -1,0 +1,523 @@
+.container {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+}
+/* === Small === */
+@media (min-width: 320px) {
+      html {
+            font-size: 40%;
+      }
+      .container {
+            max-width: 300px;
+      }
+      .menu-btn {
+            display: block;
+            font-size: 2rem;
+      }
+      .nav.active {
+            left: 65%;
+            right: 5%;
+      }
+      .menu {
+            display: none;
+      }
+      .header_left {
+            display: none;
+      }
+      .hero_btn a {
+            width: 150px;
+            height: 30px;
+      }
+      .header_btn a {
+            width: 130px;
+            height: 25px;
+      }
+      .advantage_sub_container {
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+      }
+      .advantage_logo_container {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            position: relative;
+      }
+      .about_sub_container {
+            display: block;
+      }
+      .about_left {
+            justify-content: space-between;
+            width: 100%;
+      }
+      .about_btn a {
+            width: 150px;
+            height: 30px;
+      }
+      .about_btn {
+            text-align: center;
+      }
+      .about_right {
+            display: none;
+      }
+      .services_sub_container {
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+      }
+      .services_logo_container {
+            width: 80px;
+            height: 80px;
+      }
+      .portfolio_sub_container {
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 1rem;
+            justify-content: space-between;
+            overflow: hidden;
+      }
+      .portfolio_list {
+            width: 135px;
+            height: 135px;
+      }
+      .process_sub_container {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+      .process_logo_container {
+            width: 80px;
+            height: 80px;
+      }
+      .reviews_sub_container {
+            display: grid;
+            grid-template-columns: repeat(1,minmax(0,1fr));
+      }
+      .reviews_logo_container {
+            width: 50px;
+            height: 50px;
+      }
+      .skills_sub_container {
+            grid-template-columns: repeat(1,minmax(0,1fr));
+      }
+      .footer_container {
+            display: block;
+            margin-bottom: 1rem;
+      }
+}
+
+@media (min-width: 360px) {
+      html {
+            font-size: 45%;
+      }
+      .container {
+            max-width: 340px;
+      }
+      .menu-btn {
+            display: block;
+            font-size: 2rem;
+      }
+      .menu {
+            display: none;
+      }
+      .header_left {
+            display: none;
+      }
+      .advantage_logo_container {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            position: relative;
+      }
+      .portfolio_sub_container {
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            gap: 1rem;
+            justify-content: space-between;
+            overflow: hidden;
+      }
+      .portfolio_list {
+            width: 150px;
+            height: 150px;
+      }
+      .process_logo_container {
+            width: 90px;
+            height: 90px;
+      }
+      .reviews_logo_container {
+            width: 60px;
+            height: 60px;
+      }
+}
+
+@media (min-width: 420px) {
+      html {
+            font-size: 50%;
+      }
+      .container {
+            max-width: 400px;
+      }
+      .menu-btn {
+            display: block;
+            font-size: 2rem;
+      }
+      .menu {
+            display: none;
+      }
+      .header_left {
+            display: none;
+      }
+      .advantage_logo_container {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            position: relative;
+      }
+      .services_logo_container {
+            width: 100px;
+            height: 100px;
+      }
+      .portfolio_list {
+            width: 160px;
+            height: 160px;
+      }
+      .process_logo_container {
+            width: 100px;
+            height: 100px;
+      }
+      .reviews_logo_container {
+            width: 65px;
+            height: 65px;
+      }
+      .skills_sub_container {
+            grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+}
+
+
+/* === Medium === */
+@media (min-width: 576px) {
+      html {
+            font-size: 62.5%;
+      }
+      .container {
+            max-width: 550px;
+      }
+      .menu-btn {
+            display: block;
+            font-size: 2rem;
+      }
+      .menu {
+            display: none;
+      }
+      .advantage_sub_container {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+      }
+      .advantage_logo_container {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            position: relative;
+      }
+      .services_sub_container {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+      }
+      .services_logo_container {
+            width: 80px;
+            height: 80px;
+      }
+      .portfolio_sub_container {
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 1rem;
+            justify-content: space-between;
+            overflow: hidden;
+      }
+      .portfolio_list {
+            width: 135px;
+            height: 135px;
+      }
+      .process_sub_container {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+      }
+      .process_logo_container {
+            width: 80px;
+            height: 80px;
+      }
+      .reviews_logo_container {
+            width: 80px;
+            height: 80px;
+      }
+      .skills_sub_container {
+            grid-template-columns: repeat(3,minmax(0,1fr));
+      }
+}
+
+@media (min-width: 768px) {
+      html {
+            font-size: 75%;
+      }
+      .container {
+            max-width: 720px;
+      }
+      .menu-btn {
+            display: block;
+      }
+      .menu {
+            display: none;
+      }
+      .portfolio_sub_container {
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 1rem;
+            justify-content: space-between;
+            overflow: hidden;
+      }
+      .portfolio_list {
+            width: 150px;
+            height: 150px;
+      }
+      .process_logo_container {
+            width: 100px;
+            height: 100px;
+      }
+      .reviews_logo_container {
+            width: 90px;
+            height: 90px;
+      }
+}
+
+@media (min-width: 800px) {
+      html {
+            font-size: 80%;
+      }
+      .container {
+            max-width: 780px;
+      }
+      .menu-btn {
+            display: block;
+      }
+      .menu {
+            display: none;
+      }
+      .header_left {
+            display: block;
+      }
+      .services_sub_container {
+            display: grid;
+            grid-template-columns: repeat(3,minmax(0,1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+      }
+      .services_logo_container {
+            width: 100px;
+            height: 100px;
+      }
+      .portfolio_sub_container {
+            grid-template-columns: repeat(4,minmax(0,1fr));
+            gap: 1rem;
+            justify-content: space-between;
+            overflow: hidden;
+      }
+      .portfolio_list {
+            width: 160px;
+            height: 160px;
+      }
+      .reviews_logo_container {
+            width: 100px;
+            height: 100px;
+      }
+      .skills_sub_container {
+            grid-template-columns: repeat(4,minmax(0,1fr));
+      }
+      .footer_container {
+            display: flex;
+      }
+}
+
+
+/* === Big === */
+@media (min-width:992px) {
+      html {
+            font-size: 85%;
+      }
+      .container {
+            max-width: 960px;
+      }
+      .menu-btn {
+            display: none;
+      }
+      .menu {
+            display: block;
+      }
+      .header_left {
+            display: block;
+      }
+      .hero_btn a {
+            width: 200px;
+            height: 50px;
+      }
+      .header_btn a {
+            width: 140px;
+            height: 35px;
+      }
+      .advantage_sub_container {
+            display: grid;
+            grid-template-columns: repeat(5,minmax(0,1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+      }
+      .advantage_logo_container {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            position: relative;
+      }
+      .about_sub_container {
+            display: flex;
+            gap: 4rem;
+      }
+      .about_left {
+            justify-content: space-between;
+            width: 50%;
+      }
+      .about_right {
+            display: block;
+      }
+      .services_sub_container {
+            display: grid;
+            grid-template-columns: repeat(4,minmax(0,1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+      }
+      .services_logo_container {
+            width: 100px;
+            height: 100px;
+      }
+      .portfolio_sub_container {
+            display: grid;
+            grid-template-columns: repeat(5,minmax(0,1fr));
+            gap: 1rem;
+            justify-content: space-between;
+            padding: 2rem;
+      }
+      .portfolio_list {
+            width: 200px;
+            height: 200px;
+      }
+      .about_btn {
+            text-align: left;
+      }
+      .process_sub_container {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(6,minmax(0,1fr));
+      }
+      .process_logo_container {
+            width: 120px;
+            height: 120px;
+      }
+      .reviews_sub_container {
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+      .reviews_logo_container {
+            width: 90px;
+            height: 90px;
+      }
+      .footer_container {
+            display: flex;
+      }
+}
+
+
+@media (min-width:1260px) {
+      html {
+            font-size: 100%;
+      }
+      .container {
+            max-width: 1200px;
+      }
+      .portfolio_sub_container {
+            display: grid;
+            grid-template-columns: repeat(5,minmax(0,1fr));
+            gap: 1.25rem;
+            justify-content: space-between;
+            padding: 2rem;
+      }
+      .portfolio_list {
+            width: 200px;
+            height: 200px;
+      }.reviews_sub_container {
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+      .reviews_logo_container {
+            width: 120px;
+            height: 120px;
+      }
+      .skills_sub_container {
+            grid-template-columns: repeat(5,minmax(0,1fr));
+      }
+
+}
+
